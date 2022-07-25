@@ -12,7 +12,7 @@ const SignIn = () => {
   useEffect(function() {
     async function fetchUser() {
       try {
-        const res = await axios.get("http://localhost:8000/api/getAuthUser", {
+        const res = await axios.get("https://amazon-clone-sp-be.herokuapp.com/api/getAuthUser", {
           withCredentials: true
         });
 
